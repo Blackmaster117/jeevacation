@@ -6,7 +6,7 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: larger;
         }
-            /* Based on better website http://bettermotherfuckingwebsite.com/ */
+            
     body {
       margin: 0 auto;
       max-width: 960px;
@@ -22,6 +22,7 @@
     main {
       margin: 1em auto;
       padding: 1em;
+      
     }
 
     h1,
@@ -43,7 +44,7 @@
       content: " »";
     }
 
-    /* Here we start */
+    
     nav {
       background-color: rgb(64, 217, 255);
       color: snow;
@@ -52,25 +53,20 @@
     }
 
     nav ul {
-      /* Make the markers disappear */
       list-style-type: none;
     }
 
     nav ul li {
-      /* Puts the elements in a single line */
       display: inline-flex;
       margin: 0.3em 1em;
     }
 
-    /* These two lines make the checkbox and the label disappear when we are in desktop mode. */
     nav input[type="checkbox"],
     nav label {
       display: none;
     }
 
-    /* This start to get interesting: we go into mobile phone mode */
     @media (max-width: 576px) {
-      /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
       input[type="checkbox"]:not(:checked) + ul {
         display: none;
       }
@@ -82,7 +78,6 @@
         margin-right: 0;
       }
 
-      /* Stlying the menu icon, the checkbox stays hidden */
       nav label {
         text-align: right;
         display: block;
@@ -91,14 +86,11 @@
         align-self: center;
       }
 
-      /* Because we are in mobile mode, we want to display it as a vertical list */
-      nav ul {
+       nav ul {
         display: block;
       }
 
-      /* We have two lists: the first one are the always visibile items in the 
-        menu bar. The second one is the one that will be hidden */
-      nav ul:last-child {
+       nav ul:last-child {
         width: 100%;
         flex-basis: 100%;
       }
@@ -112,32 +104,37 @@
     }
     </style>
 <title>Jeffrey's Vacations!</title>
-<link rel="icon" type="image/icon" href="C:\Users\gordo\OneDrive\Dokumente\GitHub\jeevacation\jeevacation\assets\Logo.ico">
+<link rel="icon" type="image/icon" href="assets\Logo.ico">
 </head>
 
 <body>
         <nav>
-      <!-- Always visible items in the nav bar -->
       <ul>
         <li>
         
-          <a href="file:///C:/Users/gordo/OneDrive/Dokumente/GitHub/jeevacation/jeevacation/index.html">Jeffrey E's Vacations</a>
-           <img src="C:\Users\gordo\OneDrive\Dokumente\GitHub\jeevacation\jeevacation\assets\Logo2.png" >
+          <a href="index.html">Jeffrey E's Vacations</a>
+           <img src="assets\Logo2.png" >
         </li>
       </ul>
-      <!-- The hamburger menu -->
-      <label for="menu" tabindex="0"> = </label>
+       <label for="menu" tabindex="0"> = </label>
       <input id="menu" type="checkbox" />
       
-      <!-- The collapsable menu -->
-      <ul>
-        <li><a href="C:\Users\gordo\OneDrive\Dokumente\GitHub\jeevacation\jeevacation\pages\rooms.html">Rooms</a></li>
-        <li><a href="C:\Users\gordo\OneDrive\Dokumente\GitHub\jeevacation\jeevacation\pages\activities.html">Activities</a></li>
-        <li><a href="C:\Users\gordo\OneDrive\Dokumente\GitHub\jeevacation\jeevacation\pages\booking.html">Booking</a></li>
+       <ul>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="booking.html">Booking</a></li>
       </ul>
     </nav>
     <main>
-    <p1>There is lots to do on our island. Here is a list of fun activities, that we offer.</p1>
+    <p1>
+         Here is a small list of our available Rooms.
+    </p1>
+    <img src="assets\suite.jpg">
+    <br>
+   <p1 style=" font-size: x-large; font-weight: bold;">U.S Virgin Suite</p1> 
    
+   <p1 style=" font-size: x-large; font-weight: bold; text-align: left; display: inline;">300$ per night</p1>
+   <br>
+   <p1>Named after the beautiful island chain our island is located, this simple but elegant suite has the charm of indigeounous weaving and a youthful design.</p1>
     </main>
 </body>
